@@ -12,6 +12,10 @@ class ClientesController extends Controller
         return view('cliente.novo_cliente');
     }
 
+    function store(){
+        return view('navbars');
+    }
+
     function novo(Request $req){
         $nome = $req->input('nome');
         $telefone = $req->input('telefone');
@@ -66,4 +70,5 @@ class ClientesController extends Controller
         return redirect()->route('clientes_listar');
 
     }
+    
 }
