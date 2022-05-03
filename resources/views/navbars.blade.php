@@ -41,7 +41,7 @@
         </div>
 @endsection
 
-@section('Navbar01')
+@section('Navbar02')
 <header id="navbar-orangePurple" class="p-3 text-white" style="background-color: #fd6a2c;">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">

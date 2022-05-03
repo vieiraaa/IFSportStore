@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClientesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,15 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-    Route::get('/dashboard', function() {
-        return view ('dashboard');
-    })->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-        Route::middleware(['auth'])->group(function(){
+    Route::get('/ifsport/store', [ClientesController::class, 'store']);
 
-            Route::get('/ifsport/store', [ClientesController::class, 'store']);
+    Route::get('/ifsport/cadastro_cli', [ClientesController::class, 'cadcli']);
 
-         
+    Route::middleware(['auth'])->group(function(){
+
+        
 });
-
-require __DIR__.'/auth.php';   
+require __DIR__.'/auth.php';

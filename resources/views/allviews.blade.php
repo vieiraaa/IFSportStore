@@ -96,7 +96,7 @@
                                   <div class="mb-3 form-check">
                   </div>
 
-                      <button type="submit" class="btn btn-warning">Cadastrar Fornecedor</button>
+                      <button type="submit" class="btn btn-warning">Teste</button>
                     </form>
               </div>
 
@@ -108,6 +108,13 @@
 
 
     </div>
+    <script type="text/javascript">
+      $("#telefone").mask("(00) 00000-0000");
+      </script>
+    
+    <script type="text/javascript">
+    $("#cnpj").mask("00.000.000/0000-00");
+    </script>
 
 @endsection
 
@@ -219,7 +226,13 @@
 
 
       </div>
-
+      <script type="text/javascript">
+        $("#telefone").mask("(00) 00000-0000");
+        </script>
+      
+      <script type="text/javascript">
+      $("#cnpj").mask("00.000.000/0000-00");
+      </script>
 @endsection
 
 @section('cad_end')
@@ -672,4 +685,6 @@
             
 
         </div>
+
 @endsection
+
