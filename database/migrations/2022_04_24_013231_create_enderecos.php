@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('cidade', 100);
             $table->string('estado', 100);
             $table->unsignedBigInteger('cliente_id');
-            $table->foreign('cliente_id')->references('id')->on('clientes');
+            $table->foreign('cliente_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
