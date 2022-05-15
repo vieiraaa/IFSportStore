@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('endereco_id');
             $table->unsignedBigInteger('transportadora_id');
-            $table->foreign('cliente_id')->references('id')->on('clientes');
+            $table->foreign('cliente_id')->references('id')->on('users');
             $table->foreign('endereco_id')->references('id')->on('enderecos');
             $table->foreign('transportadora_id')->references('id')->on('transportadoras');
 

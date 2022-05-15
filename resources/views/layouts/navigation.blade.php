@@ -6,17 +6,38 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        IFSportStore
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Produtos') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Categorias') }}
+                    </x-nav-link>
+                </div>
+                @if(Auth::user()-> nivel != 1)
+
+                @else
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('transportadoras_listar')" :active="request()->routeIs('dashboard')">
+                            {{ __('Transportadoras') }}
+                        </x-nav-link>
+                    </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('fornecedores_listar')" :active="request()->routeIs('dashboard')">
+                            {{ __('Fornecedores') }}
+                        </x-nav-link>
+                    </div>
+                @endif
             </div>
+                
+            
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -41,7 +62,15 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('Desconectar') }}
+                            </x-dropdown-link>
+
+                        </form>
+                        <form action="{{ route('enderecos_listar') }}">
+                            <x-dropdown-link :href="route('enderecos_listar')"
+                                onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                            {{ __('Endereços') }}
                             </x-dropdown-link>
                         </form>
                     </x-slot>
@@ -90,3 +119,4 @@
         </div>
     </div>
 </nav>
+
