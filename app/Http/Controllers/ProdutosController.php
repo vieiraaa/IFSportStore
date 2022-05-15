@@ -25,8 +25,8 @@ class ProdutosController extends Controller
     function novo (Request $req){
         $produto = new Produto();
         $produto->nome = $req->input('nome');
-        $produto->valor = 0;
-        $produto->descricao = "";
+        $produto->valor = $req->input('valor');
+        $produto->descricao = $req->input('descricao');
         $produto->slug = "";
         $produto->caminho = "";
         $produto->save();
