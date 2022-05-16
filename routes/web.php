@@ -40,7 +40,7 @@ Route::get('/', function () {
             Route::post('/ifsport/enderecos/alterar/', [EnderecosController::class, 'salvar'])->name('enderecos_salvar');
             Route::get('/ifsport/enderecos/excluir/{id}', [EnderecosController::class, 'excluir'])->name('enderecos_excluir');
 
-<<<<<<< HEAD
+
             Route::get('/ifsport/store', [ClientesController::class, 'store']);
 
             Route::get('/ifsport/produtos/novo', [ProdutosController::class, 'cadastro'])->name('produtos_novo');
@@ -49,8 +49,14 @@ Route::get('/', function () {
             Route::get('/ifsport/produtos/listar', [ProdutosController::class, 'listar'])->name('produtos_listar');
             Route::get('/ifsport/produto/{slug}', [ProdutosController::class, 'exibir'])->name('produtos_exibir');
 
-=======
             Route::middleware('verifica.nivel')->group(function () {
+                /*  ---------------------------------------Categorias---------------------------------------------- */
+                //Route::get('/ifsport/categorias/novo', [CategoriasController::class, 'cadastro'])->name('categorias_cadastro');
+                Route::post('/ifsport/categorias/novo', [CategoriasController::class, 'novo'])->name('categorias_novo');
+                Route::get('/ifsport/categorias/listar', [CategoriasController::class, 'listar'])->name('categorias_listar');
+                Route::get('/ifsport/categorias/alterar/{id}', [CategoriasController::class, 'alterar'])->name('categorias_alterar');
+                Route::post('/ifsport/categorias/alterar/', [CategoriasController::class, 'salvar'])->name('categorias_salvar');
+                Route::get('/ifsport/categorias/excluir/{id}', [CategoriasController::class, 'excluir'])->name('categorias_excluir');
                 /*  ---------------------------------------Produtos---------------------------------------------- */
                 Route::get('/ifsport/produtos/novo', [ProdutosController::class, 'cadastro'])->name('produtos_novo');
                 Route::post('/ifsport/produtos/novo', [ProdutosController::class, 'novo'])->name('produtos_salvar');
@@ -71,7 +77,6 @@ Route::get('/', function () {
                 Route::post('/ifsport/fornecedores/alterar/', [FornecedoresController::class, 'salvar'])->name('fornecedores_salvar');
                 Route::get('/ifsport/fornecedores/excluir/{id}', [FornecedoresController::class, 'excluir'])->name('fornecedores_excluir');
             });
->>>>>>> ae57cfa8931915fda937baeef9ea49765c46fbeb
             
 
 });

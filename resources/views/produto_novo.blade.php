@@ -3,14 +3,11 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Lista de Transportadoras') }}
         </h2>
+    </x-slot>    
 
-Produto - Novo
-@endsection
-
-@section('conteudo') 
     <form action="{{ route('produtos_salvar') }}" method="post" enctype="multipart/form-data">
     @csrf
-<<<<<<< HEAD
+
     <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
     <div class="modal-dialog" role="document">
         <div class="modal-content rounded-4 shadow">
@@ -33,7 +30,14 @@ Produto - Novo
                 <label for="valor" class="form-label">Preco Unitario</label>
                 <input type="text" class="form-control" id="valor" name="valor" placeholder="R$">
             </div>
-            
+            <div class="mb-3">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select name="categoria">
+                    @foreach($categorias as $categoria)
+                        <option value="{{$categoria->id}}">{{$categoria->nome}}</option>
+                    @endforeach
+                </select>
+            </div>
                 <div class="form-group">
                     <label for="arquivo">Anexar Imagem do Produto</label>
                     <input type="file" class="arquivo" name="arquivo" id="arquivo">
@@ -47,44 +51,5 @@ Produto - Novo
         </div>
     </div>
     </div>
-</form>
-=======
-                    <div class="row">
 
-                        <div class="col">
-                          <label for="formFile" class="form-label">Nome do Produto:</label>
-                          <input type="text" id="nome" class="form-control" placeholder="Nome do Produto" aria-label="First name" name="nome">
-                        </div>
-
-                        <div class="col">
-                          <label for="formFile" class="form-label">Valor do produto:</label>
-                          <input type="valor" id="valor" class="form-control" placeholder="R$ 000,00" aria-label="Last name" >
-                        </div>
-                    </div>
-
-<br>
-
-                    <div class="row">
-
-                        <div class="col">
-                          <label for="formFile" class="form-label">Descrição do produto: </label>
-                          <input type="text" id="descricao" class="form-control" placeholder="Descrição do Produto: " aria-label="First name" name="nome">
-                        </div>
-
-                        
-                    </div>
-
-<br>
-
-                    <div class="mb-3">
-                    <label for="formFile" class="form-label">Escoha a Imagem do produto: </label>
-                    <input class="form-control" type="file" id="arquivo">
- 
-<br>
-                    </div>
-                    <div class="col">
-                    <input type="submit" class="btn btn-dark">
-                    </div>
-                    </form>
->>>>>>> ae57cfa8931915fda937baeef9ea49765c46fbeb
-@endsection
+</x-app-layout>

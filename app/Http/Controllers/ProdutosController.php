@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 use App\Models\Produto;
+use App\Models\Categoria;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
 {
     function cadastro(){
-        return view('produto_novo'); 
+        $categorias = Categoria::all();
+        return view('produto_novo', compact('categorias')); 
     }
 
     function listar(){
@@ -37,6 +39,7 @@ class ProdutosController extends Controller
         $produto->nome = $req->input('nome');
         $produto->valor = $req->input('valor');
         $produto->descricao = $req->input('descricao');
+        $produto->categoria_id = $req->input('categoria');
         $produto->slug = "";
         $produto->caminho = "";
         $produto->save();

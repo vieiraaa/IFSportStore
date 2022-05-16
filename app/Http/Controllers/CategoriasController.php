@@ -7,17 +7,26 @@ use App\Models\Categoria;
 
 class CategoriasController extends Controller
 {
-    function cadastro_novo(){
+    function cadastro(){
         return view('categoria.novo_categoria');
     }
     function novo(Request $req){
-        #dd($req);
-        $nome = $req->input('nome');
+        #dd($req
+        $c1 = new Categoria();
+        $c1->nome = "Calçados";
+        $c1->save();
 
-        $categoria = new Categoria();
-        $categoria->nome = $nome;
+        $c2 = new Categoria();
+        $c2->nome = "Roupas";
+        $c2->save();
 
-        $categoria->save();
+        $c3 = new Categoria();
+        $c3->nome = "Acessórios";
+        $c3->save();
+
+        $c4 = new Categoria();
+        $c4->nome = "Esporte";
+        $c4->save();
         
 
         return redirect()->route('categorias_listar');
