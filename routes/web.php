@@ -32,6 +32,11 @@ Route::get('/', function () {
 
             Route::get('/ifsport/produtos/listar', [ProdutosController::class, 'listar'])->name('produtos_listar');
             Route::get('/ifsport/produto/{slug}', [ProdutosController::class, 'exibir'])->name('produtos_exibir');
+
             
+
 });
+Route::get('/ifsport/produtos/carrinho', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
+    Route::get('/ifsport/produtos/vitrine', [ProdutosController::class, 'vitrine'])->name('produtos_vitrine');
+
 require __DIR__.'/auth.php';

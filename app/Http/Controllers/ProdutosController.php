@@ -16,6 +16,16 @@ class ProdutosController extends Controller
         return view('lista_produtos', ['produtos' => $produtos]);
     }
 
+    function carrinho(){
+        $produtos = Produto::all();
+        return view('carrinho', ['produtos' => $produtos]);
+    }
+
+    function vitrine(){
+        $produtos = Produto::all();
+        return view('vitrine', ['produtos' => $produtos]);
+    }
+
     function exibir($slug){
         $produto = Produto::where('slug', '=', $slug)->first();
         return view('exibir_produto', ['produto' => $produto]);
