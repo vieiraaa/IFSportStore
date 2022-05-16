@@ -11,7 +11,6 @@
     <title>IFSports</title>
   </head>
   <body>
-        
         <header id="navbar-netshoes" class="p-3 bg-dark text-white">
 
             <div class="container">
@@ -36,21 +35,7 @@
             </div>
             </div>        
         </header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="padding-bottom: 10px">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://static.netshoes.com.br/bnn/l_netshoes/2022-04-14/2593_full1_desk.gif" class="d-block w-100" alt="...">
-              </div>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="padding-bottom: 10px">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      
         
 
         @yield('conteudo')

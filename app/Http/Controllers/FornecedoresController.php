@@ -8,8 +8,8 @@ use App\Models\Produto;
 
 class FornecedoresController extends Controller
 {
-    function cadastro_novo(){
-        return view('fornecedor.novo_fornecedor');
+    function cadastro(){
+        return view('fornecedor.fornecedor_novo');
     }
 
     function novo(Request $req){
@@ -41,19 +41,19 @@ class FornecedoresController extends Controller
     function listar(){
         $fornecedores = Fornecedor::all();
 
-        return view('fornecedor.lista_fornecedor', ['fornecedores' => $fornecedores]);
+        return view('fornecedor.fornecedores_listar', ['fornecedores' => $fornecedores]);
     }
     function produtos_Fornecedor($id){
         $fornecedor = Fornecedor::findOrFail($id);
 
         $produtos = $fornecedor->produtos;
-        return view('fornecedor.lista_produtos_fornecedor', ['produtos' => $produtos], ['fornecedor' => $fornecedor]);
+        return view('fornecedor.fornecedor_lista_produtos', ['produtos' => $produtos], ['fornecedor' => $fornecedor]);
     }
 
     function alterar($id){
         $fornecedor = Fornecedor::findOrFail($id);
 
-        return view('fornecedor.altera_fornecedor',['fornecedor' => $fornecedor]);
+        return view('fornecedor.fornecedor_alterar',['fornecedor' => $fornecedor]);
     }
 
     function salvar(Request $req){

@@ -12,6 +12,6 @@ class Endereco extends Model
     protected $table = "enderecos";
     
     public function cliente(){
-        return $this->belongsTo(Cliente::class);
+        return $this->belongsTo(User::class);
     }
 }
