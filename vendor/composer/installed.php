@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '59aae849a1abc645f2c7f6792023caa0412c2bee',
+        'reference' => '05345ae4f57eafe2d8224480dc4ed9163e8778b7',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -388,7 +388,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '59aae849a1abc645f2c7f6792023caa0412c2bee',
+            'reference' => '05345ae4f57eafe2d8224480dc4ed9163e8778b7',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -745,8 +745,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -960,21 +960,21 @@
             'dev_requirement' => true,
         ),
         'spatie/flare-client-php' => array(
-            'pretty_version' => '1.1.1',
-            'version' => '1.1.1.0',
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/flare-client-php',
             'aliases' => array(),
-            'reference' => '1059fd8f229fa016b11063c6be9d1922d036adb7',
+            'reference' => '86a380f5b1ce839af04a08f1c8f2697184cdf23f',
             'dev_requirement' => true,
         ),
         'spatie/ignition' => array(
-            'pretty_version' => '1.3.0',
-            'version' => '1.3.0.0',
+            'pretty_version' => '1.3.1',
+            'version' => '1.3.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/ignition',
             'aliases' => array(),
-            'reference' => '6aa8f1c8c46aff30c9bd4c354dc865eeee2ed59f',
+            'reference' => '997363fbcce809b1e55f571997d49017f9c623d9',
             'dev_requirement' => true,
         ),
         'spatie/laravel-ignition' => array(

@@ -40,16 +40,6 @@ Route::get('/', function () {
             Route::post('/ifsport/enderecos/alterar/', [EnderecosController::class, 'salvar'])->name('enderecos_salvar');
             Route::get('/ifsport/enderecos/excluir/{id}', [EnderecosController::class, 'excluir'])->name('enderecos_excluir');
 
-<<<<<<< HEAD
-            Route::get('/ifsport/store', [ClientesController::class, 'store']);
-
-            Route::get('/ifsport/produtos/novo', [ProdutosController::class, 'cadastro'])->name('produtos_novo');
-            Route::post('/ifsport/produtos/novo', [ProdutosController::class, 'novo'])->name('produtos_salvar');
-
-            Route::get('/ifsport/produtos/listar', [ProdutosController::class, 'listar'])->name('produtos_listar');
-            Route::get('/ifsport/produto/{slug}', [ProdutosController::class, 'exibir'])->name('produtos_exibir');
-
-=======
             Route::middleware('verifica.nivel')->group(function () {
                 /*  ---------------------------------------Produtos---------------------------------------------- */
                 Route::get('/ifsport/produtos/novo', [ProdutosController::class, 'cadastro'])->name('produtos_novo');
@@ -71,11 +61,10 @@ Route::get('/', function () {
                 Route::post('/ifsport/fornecedores/alterar/', [FornecedoresController::class, 'salvar'])->name('fornecedores_salvar');
                 Route::get('/ifsport/fornecedores/excluir/{id}', [FornecedoresController::class, 'excluir'])->name('fornecedores_excluir');
             });
->>>>>>> ae57cfa8931915fda937baeef9ea49765c46fbeb
             
 
 });
-Route::get('/ifsport/produtos/carrinho', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
+    Route::get('/ifsport/produtos/carrinho', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
     Route::get('/ifsport/produtos/vitrine', [ProdutosController::class, 'vitrine'])->name('produtos_vitrine');
 
 require __DIR__.'/auth.php';
