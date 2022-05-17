@@ -65,7 +65,7 @@
                                     <option value="RS">Rio Grande do Sul</option>
                                     <option value="SC">Santa Catarina</option>
                                     <option value="SE">Sergipe</option>
-                                    <option value="SP">São Paulo</option>
+                                    <option value="SP">São Pauloo</option>
                                     <option value="TO">Tocantins</option>
                                 </select>
                                     </select>
