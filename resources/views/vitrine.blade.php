@@ -1,10 +1,9 @@
-@extends('template')
-
-@section('titulo')
-Vitrine
-@endsection
-
-@section('conteudo')
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Lista de fornecedores') }}
+        </h2>
+    </x-slot>
 
 <body>
         <div class="container">
@@ -94,4 +93,4 @@ Vitrine
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-@endsection
+</x-app-layout>

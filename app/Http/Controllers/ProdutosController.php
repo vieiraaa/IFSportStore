@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
 {
+    function produtosCategoria($id){
+        $produtos = Produto::where('categoria_id', $id)->get();
+        return view('produtos_categorias',['produtos' => $produtos]);
+    }
     function cadastro(){
         $categorias = Categoria::all();
         return view('produto_novo', compact('categorias')); 

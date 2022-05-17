@@ -4,14 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Categoria;
+use App\Models\Produto;
 
 class CategoriasController extends Controller
 {
     function cadastro(){
-        return view('categoria.novo_categoria');
+        return view('categoria.categorias_novo');
     }
-    function novo(Request $req){
-        #dd($req
+    /*function novo(Request $req){
+        
+        $nome = $req->input('nome');
+
+        $categoria = new Categoria();
+        $categoria->nome = $nome;
         $c1 = new Categoria();
         $c1->nome = "Calçados";
         $c1->save();
@@ -30,10 +35,10 @@ class CategoriasController extends Controller
         
 
         return redirect()->route('categorias_listar');
-    }
+    }*/
     function listar(){
         $categorias = Categoria::all();
-        return view('categoria.lista_categorias', ['categorias' => $categorias]);
+        return view('categoria.categorias_listar', ['categorias' => $categorias]);
     }
 
     function alterar($id){
@@ -54,6 +59,7 @@ class CategoriasController extends Controller
 
         return redirect()->route('categorias_listar');
     }
+
 
     function excluir($id){
         $categoria = Categoria::findOrFail($id);
