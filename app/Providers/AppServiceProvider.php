@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('template', function($view){
+            $categorias = \App\Models\Categoria::all();
+            $view->with(compact('categorias'));
+        });
     }
 }

@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Cliente;
+use App\Models\User;
+use Auth;
 use App\Models\Endereco;
 
 class EnderecosController extends Controller
 {
-    function cadastro_novo(){
-        return view('endereco.novo_endereco');
+    function cadastro(){
+        $usuario = Auth::user();
+        return view('endereco.endereco_novo', compact('usuario'));
     }
 
     function novo(Request $req){
@@ -18,7 +20,7 @@ class EnderecosController extends Controller
         $bairro = $req->input('bairro');
         $cidade = $req->input('cidade');
         $estado = $req->input('estado');
-        $cliente = $req->input('cliente');
+        $cliente_id = $req->input('cliente_id');
         
 
         $endereco = new Endereco();
@@ -27,7 +29,7 @@ class EnderecosController extends Controller
         $endereco->bairro = $bairro;
         $endereco->cidade = $cidade;
         $endereco->estado = $estado;
-        $endereco->cliente_id = $cliente;
+        $endereco->cliente_id = $cliente_id;
 
         $endereco->save();
 
@@ -37,15 +39,17 @@ class EnderecosController extends Controller
 
 
     function listar(){
-        $enderecos = Endereco::all();
+        $usuario = Auth::user();
+        $enderecos = Endereco::where('cliente_id', $usuario->id)->get();
 
-        return view('endereco.lista_endereco', ['enderecos' => $enderecos]);
+        return view('endereco.endereco_listar', ['enderecos' => $enderecos], compact('usuario'));
     }
 
     function alterar($id){
+        $usuario = Auth::user();
         $endereco = Endereco::findOrFail($id);
 
-        return view('endereco.altera_endereco',['endereco' => $endereco]);
+        return view('endereco.endereco_alterar',['endereco' => $endereco], compact('usuario'));
     }
 
     function salvar(Request $req){
@@ -55,7 +59,7 @@ class EnderecosController extends Controller
         $bairro = $req->input('bairro');
         $cidade = $req->input('cidade');
         $estado = $req->input('estado');
-        $cliente = $req->input('cliente');
+        $cliente_id = $req->input('cliente_id');
 
         $endereco = Endereco::findOrFail($id);
         $endereco->cep = $cep;
@@ -63,7 +67,7 @@ class EnderecosController extends Controller
         $endereco->bairro = $bairro;
         $endereco->cidade = $cidade;
         $endereco->estado = $estado;
-        $endereco->cliente_id = $cliente;
+        $endereco->cliente_id = $cliente_id;
 
         $endereco->save();
 

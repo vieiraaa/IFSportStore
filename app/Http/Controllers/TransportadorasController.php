@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Transportadora;
+use App\Models\Categoria;
 use App\Models\Produto;
 
 class TransportadorasController extends Controller
 {
-    function cadastro_novo(){
-        return view('transportadora.novo_transportadora');
+    function cadastro(){
+        return view('transportadora.transportadora_novo');
     }
 
     function novo(Request $req){
@@ -41,7 +42,7 @@ class TransportadorasController extends Controller
     function listar(){
         $transportadoras = Transportadora::all();
 
-        return view('transportadora.lista_transportadora', ['transportadora' => $transportadoras]);
+        return view('transportadora.transportadoras_listar', ['transportadoras' => $transportadoras]);
     }
     function produtos_Tornecedor($id){
         $transportadora = Transportadora::findOrFail($id);
@@ -53,7 +54,7 @@ class TransportadorasController extends Controller
     function alterar($id){
         $transportadora = Transportadora::findOrFail($id);
 
-        return view('transportadora.altera_transportadora',['transportadora' => $transportadora]);
+        return view('transportadora.transportadora_alterar',['transportadora' => $transportadora]);
     }
 
     function salvar(Request $req){

@@ -15,9 +15,6 @@ class ClientesController extends Controller
     function store(){
         return view('navbars');
     }
-    function cadcli(){
-        return view('allviews');
-    }
 
     function novo(Request $req){
         $nome = $req->input('nome');

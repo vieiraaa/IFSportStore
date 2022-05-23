@@ -32,7 +32,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://static.netshoes.com.br/bnn/l_netshoes/2022-04-14/2593_full1_desk.gif" class="d-block w-100" alt="...">
+              <img src="https://scontent.fcfc5-1.fna.fbcdn.net/v/t39.30808-6/267723531_3570411649750673_2786986196189470203_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=973b4a&_nc_ohc=HgBaBICE_0YAX-5p8nF&_nc_oc=AQlDSEuFeri67GArjeHycwZMvcxSHDJNVAYsVsyl1z4AGuQSmtw9n0gKRb1EkpzU1Po&_nc_ht=scontent.fcfc5-1.fna&oh=00_AT_n_z29bi0d17cZkbwUov8_PwaTSK21fH_56HO2hdmsmQ&oe=62856548" class="d-block w-100" alt="...">
             </div>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -41,7 +41,7 @@
         </div>
 @endsection
 
-@section('Navbar02')
+@section('Navbar01')
 <header id="navbar-orangePurple" class="p-3 text-white" style="background-color: #fd6a2c;">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -68,7 +68,7 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://static.netshoes.com.br/bnn/l_netshoes/2022-04-22/9532_full2_desk.gif" class="d-block w-100" alt="bolacopa">
+              <img src="https://scontent.fcfc5-1.fna.fbcdn.net/v/t39.30808-6/267723531_3570411649750673_2786986196189470203_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=973b4a&_nc_ohc=HgBaBICE_0YAX-5p8nF&_nc_oc=AQlDSEuFeri67GArjeHycwZMvcxSHDJNVAYsVsyl1z4AGuQSmtw9n0gKRb1EkpzU1Po&_nc_ht=scontent.fcfc5-1.fna&oh=00_AT_n_z29bi0d17cZkbwUov8_PwaTSK21fH_56HO2hdmsmQ&oe=62856548" class="d-block w-100" alt="bolacopa">
             </div>
           </div>
         </div>

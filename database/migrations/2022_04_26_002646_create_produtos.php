@@ -18,11 +18,9 @@ return new class extends Migration
             $table->string('nome',100);
             $table->double('valor');
             $table->string('descricao',200);
-            $table->unsignedBigInteger('fornecedor_id');
-            $table->unsignedBigInteger('marca_id');
+            $table->string('slug', 255);
+            $table->string('caminho', 255);
             $table->unsignedBigInteger('categoria_id');
-            $table->foreign('fornecedor_id')->references('id')->on('fornecedores');
-            $table->foreign('marca_id')->references('id')->on('marcas');
             $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
+class ComposerStaticInitcfccd341b3edf3e2553b356a712cc0e4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -179,8 +179,8 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Whoops\\' => 
         array (
@@ -336,8 +336,8 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -512,12 +512,21 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+        'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+        'App\\Http\\Controllers\\Auth\\EmailVerificationPromptController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+        'App\\Http\\Controllers\\Auth\\NewPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/NewPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
+        'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
+        'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
         'App\\Http\\Controllers\\CategoriasController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoriasController.php',
         'App\\Http\\Controllers\\ClientesController' => __DIR__ . '/../..' . '/app/Http/Controllers/ClientesController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\EnderecosController' => __DIR__ . '/../..' . '/app/Http/Controllers/EnderecosController.php',
         'App\\Http\\Controllers\\FornecedoresController' => __DIR__ . '/../..' . '/app/Http/Controllers/FornecedoresController.php',
         'App\\Http\\Controllers\\MarcasController' => __DIR__ . '/../..' . '/app/Http/Controllers/MarcasController.php',
+        'App\\Http\\Controllers\\ProdutosController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProdutosController.php',
         'App\\Http\\Controllers\\TransportadorasController' => __DIR__ . '/../..' . '/app/Http/Controllers/TransportadorasController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -527,12 +536,15 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
+        'App\\Http\\Middleware\\VerificaNivel' => __DIR__ . '/../..' . '/app/Http/Middleware/VerificaNivel.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Models\\Categoria' => __DIR__ . '/../..' . '/app/Models/Categoria.php',
         'App\\Models\\Cliente' => __DIR__ . '/../..' . '/app/Models/Cliente.php',
         'App\\Models\\Endereco' => __DIR__ . '/../..' . '/app/Models/Endereco.php',
         'App\\Models\\Fornecedor' => __DIR__ . '/../..' . '/app/Models/Fornecedor.php',
         'App\\Models\\Marca' => __DIR__ . '/../..' . '/app/Models/Marca.php',
+        'App\\Models\\Produto' => __DIR__ . '/../..' . '/app/Models/Produto.php',
         'App\\Models\\Transportadora' => __DIR__ . '/../..' . '/app/Models/Transportadora.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -540,6 +552,8 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\View\\Components\\AppLayout' => __DIR__ . '/../..' . '/app/View/Components/AppLayout.php',
+        'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -646,6 +660,7 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\CategoriasSeeder' => __DIR__ . '/../..' . '/database/seeders/CategoriasSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
@@ -1844,6 +1859,7 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Illuminate\\Database\\DatabaseServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php',
         'Illuminate\\Database\\DatabaseTransactionRecord' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DatabaseTransactionRecord.php',
         'Illuminate\\Database\\DatabaseTransactionsManager' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DatabaseTransactionsManager.php',
+        'Illuminate\\Database\\DeadlockException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DeadlockException.php',
         'Illuminate\\Database\\DetectsConcurrencyErrors' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DetectsConcurrencyErrors.php',
         'Illuminate\\Database\\DetectsLostConnections' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php',
         'Illuminate\\Database\\Eloquent\\BroadcastableModelEventOccurred' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/BroadcastableModelEventOccurred.php',
@@ -1925,6 +1941,7 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Illuminate\\Database\\Events\\TransactionRolledBack' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php',
         'Illuminate\\Database\\Grammar' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Grammar.php',
         'Illuminate\\Database\\LazyLoadingViolationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/LazyLoadingViolationException.php',
+        'Illuminate\\Database\\LostConnectionException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/LostConnectionException.php',
         'Illuminate\\Database\\MigrationServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php',
         'Illuminate\\Database\\Migrations\\DatabaseMigrationRepository' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php',
         'Illuminate\\Database\\Migrations\\Migration' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Migrations/Migration.php',
@@ -1970,6 +1987,7 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Illuminate\\Database\\Schema\\Grammars\\RenameColumn' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/Grammars/RenameColumn.php',
         'Illuminate\\Database\\Schema\\Grammars\\SQLiteGrammar' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php',
         'Illuminate\\Database\\Schema\\Grammars\\SqlServerGrammar' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php',
+        'Illuminate\\Database\\Schema\\IndexDefinition' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php',
         'Illuminate\\Database\\Schema\\MySqlBuilder' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php',
         'Illuminate\\Database\\Schema\\MySqlSchemaState' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php',
         'Illuminate\\Database\\Schema\\PostgresBuilder' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php',
@@ -3135,6 +3153,7 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Monolog\\Handler\\SqsHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SqsHandler.php',
         'Monolog\\Handler\\StreamHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/StreamHandler.php',
         'Monolog\\Handler\\SwiftMailerHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SwiftMailerHandler.php',
+        'Monolog\\Handler\\SymfonyMailerHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php',
         'Monolog\\Handler\\SyslogHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SyslogHandler.php',
         'Monolog\\Handler\\SyslogUdpHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php',
         'Monolog\\Handler\\SyslogUdp\\UdpSocket' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/SyslogUdp/UdpSocket.php',
@@ -4149,9 +4168,65 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Psy\\ParserFactory' => __DIR__ . '/..' . '/psy/psysh/src/ParserFactory.php',
         'Psy\\Readline\\GNUReadline' => __DIR__ . '/..' . '/psy/psysh/src/Readline/GNUReadline.php',
         'Psy\\Readline\\HoaConsole' => __DIR__ . '/..' . '/psy/psysh/src/Readline/HoaConsole.php',
+        'Psy\\Readline\\Hoa\\Autocompleter' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Autocompleter.php',
+        'Psy\\Readline\\Hoa\\AutocompleterAggregate' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/AutocompleterAggregate.php',
+        'Psy\\Readline\\Hoa\\AutocompleterPath' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/AutocompleterPath.php',
+        'Psy\\Readline\\Hoa\\AutocompleterWord' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/AutocompleterWord.php',
+        'Psy\\Readline\\Hoa\\Console' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Console.php',
+        'Psy\\Readline\\Hoa\\ConsoleCursor' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleCursor.php',
+        'Psy\\Readline\\Hoa\\ConsoleException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleException.php',
+        'Psy\\Readline\\Hoa\\ConsoleInput' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleInput.php',
+        'Psy\\Readline\\Hoa\\ConsoleOutput' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleOutput.php',
+        'Psy\\Readline\\Hoa\\ConsoleProcessus' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleProcessus.php',
+        'Psy\\Readline\\Hoa\\ConsoleTput' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleTput.php',
+        'Psy\\Readline\\Hoa\\ConsoleWindow' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ConsoleWindow.php',
+        'Psy\\Readline\\Hoa\\Event' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Event.php',
+        'Psy\\Readline\\Hoa\\EventBucket' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventBucket.php',
+        'Psy\\Readline\\Hoa\\EventException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventException.php',
+        'Psy\\Readline\\Hoa\\EventListenable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventListenable.php',
+        'Psy\\Readline\\Hoa\\EventListener' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventListener.php',
+        'Psy\\Readline\\Hoa\\EventListens' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventListens.php',
+        'Psy\\Readline\\Hoa\\EventSource' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/EventSource.php',
+        'Psy\\Readline\\Hoa\\Exception' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Exception.php',
+        'Psy\\Readline\\Hoa\\ExceptionIdle' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ExceptionIdle.php',
+        'Psy\\Readline\\Hoa\\File' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/File.php',
+        'Psy\\Readline\\Hoa\\FileDirectory' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileDirectory.php',
+        'Psy\\Readline\\Hoa\\FileDoesNotExistException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileDoesNotExistException.php',
+        'Psy\\Readline\\Hoa\\FileException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileException.php',
+        'Psy\\Readline\\Hoa\\FileFinder' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileFinder.php',
+        'Psy\\Readline\\Hoa\\FileGeneric' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileGeneric.php',
+        'Psy\\Readline\\Hoa\\FileLink' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileLink.php',
+        'Psy\\Readline\\Hoa\\FileLinkRead' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileLinkRead.php',
+        'Psy\\Readline\\Hoa\\FileLinkReadWrite' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileLinkReadWrite.php',
+        'Psy\\Readline\\Hoa\\FileRead' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileRead.php',
+        'Psy\\Readline\\Hoa\\FileReadWrite' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/FileReadWrite.php',
+        'Psy\\Readline\\Hoa\\IStream' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/IStream.php',
+        'Psy\\Readline\\Hoa\\IteratorFileSystem' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/IteratorFileSystem.php',
+        'Psy\\Readline\\Hoa\\IteratorRecursiveDirectory' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/IteratorRecursiveDirectory.php',
+        'Psy\\Readline\\Hoa\\IteratorSplFileInfo' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/IteratorSplFileInfo.php',
+        'Psy\\Readline\\Hoa\\Protocol' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Protocol.php',
+        'Psy\\Readline\\Hoa\\ProtocolException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ProtocolException.php',
+        'Psy\\Readline\\Hoa\\ProtocolNode' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ProtocolNode.php',
+        'Psy\\Readline\\Hoa\\ProtocolNodeLibrary' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ProtocolNodeLibrary.php',
+        'Psy\\Readline\\Hoa\\ProtocolWrapper' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/ProtocolWrapper.php',
+        'Psy\\Readline\\Hoa\\Readline' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Readline.php',
+        'Psy\\Readline\\Hoa\\Stream' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Stream.php',
+        'Psy\\Readline\\Hoa\\StreamBufferable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamBufferable.php',
+        'Psy\\Readline\\Hoa\\StreamContext' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamContext.php',
+        'Psy\\Readline\\Hoa\\StreamException' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamException.php',
+        'Psy\\Readline\\Hoa\\StreamIn' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamIn.php',
+        'Psy\\Readline\\Hoa\\StreamLockable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamLockable.php',
+        'Psy\\Readline\\Hoa\\StreamOut' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamOut.php',
+        'Psy\\Readline\\Hoa\\StreamPathable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamPathable.php',
+        'Psy\\Readline\\Hoa\\StreamPointable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamPointable.php',
+        'Psy\\Readline\\Hoa\\StreamStatable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamStatable.php',
+        'Psy\\Readline\\Hoa\\StreamTouchable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/StreamTouchable.php',
+        'Psy\\Readline\\Hoa\\Ustring' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Ustring.php',
+        'Psy\\Readline\\Hoa\\Xcallable' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Hoa/Xcallable.php',
         'Psy\\Readline\\Libedit' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Libedit.php',
         'Psy\\Readline\\Readline' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Readline.php',
         'Psy\\Readline\\Transient' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Transient.php',
+        'Psy\\Readline\\Userland' => __DIR__ . '/..' . '/psy/psysh/src/Readline/Userland.php',
         'Psy\\Reflection\\ReflectionClassConstant' => __DIR__ . '/..' . '/psy/psysh/src/Reflection/ReflectionClassConstant.php',
         'Psy\\Reflection\\ReflectionConstant' => __DIR__ . '/..' . '/psy/psysh/src/Reflection/ReflectionConstant.php',
         'Psy\\Reflection\\ReflectionConstant_' => __DIR__ . '/..' . '/psy/psysh/src/Reflection/ReflectionConstant_.php',
@@ -5499,6 +5574,11 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
         'Symfony\\Polyfill\\Php80\\PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/PhpToken.php',
         'Symfony\\Polyfill\\Php81\\Php81' => __DIR__ . '/..' . '/symfony/polyfill-php81/Php81.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
+        'Tests\\Feature\\Auth\\AuthenticationTest' => __DIR__ . '/../..' . '/tests/Feature/Auth/AuthenticationTest.php',
+        'Tests\\Feature\\Auth\\EmailVerificationTest' => __DIR__ . '/../..' . '/tests/Feature/Auth/EmailVerificationTest.php',
+        'Tests\\Feature\\Auth\\PasswordConfirmationTest' => __DIR__ . '/../..' . '/tests/Feature/Auth/PasswordConfirmationTest.php',
+        'Tests\\Feature\\Auth\\PasswordResetTest' => __DIR__ . '/../..' . '/tests/Feature/Auth/PasswordResetTest.php',
+        'Tests\\Feature\\Auth\\RegistrationTest' => __DIR__ . '/../..' . '/tests/Feature/Auth/RegistrationTest.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
@@ -5641,10 +5721,10 @@ class ComposerStaticInita845f01e0c69e840ba2019955d2baf72
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita845f01e0c69e840ba2019955d2baf72::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita845f01e0c69e840ba2019955d2baf72::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita845f01e0c69e840ba2019955d2baf72::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInita845f01e0c69e840ba2019955d2baf72::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcfccd341b3edf3e2553b356a712cc0e4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcfccd341b3edf3e2553b356a712cc0e4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcfccd341b3edf3e2553b356a712cc0e4::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcfccd341b3edf3e2553b356a712cc0e4::$classMap;
 
         }, null, ClassLoader::class);
     }
