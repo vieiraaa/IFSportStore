@@ -1,11 +1,15 @@
 @extends('template')
 
+<<<<<<< HEAD
 @section('titulo')
 Vitrine
 @endsection
 
 @section('conteudo')
 
+=======
+@section('conteudo')
+>>>>>>> dev
 <body>
         <div class="container">
             <hr class="mt-3">
@@ -93,5 +97,8 @@ Vitrine
     </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 @endsection

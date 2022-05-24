@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('descricao',200);
             $table->string('slug', 255);
             $table->string('caminho', 255);
+            $table->unsignedBigInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });
     }

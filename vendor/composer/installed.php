@@ -1,11 +1,15 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
+<<<<<<< HEAD
         'reference' => '05345ae4f57eafe2d8224480dc4ed9163e8778b7',
+=======
+        'reference' => 'f96b5e29339c66a2c467abb23bdf4da95dedaa0d',
+>>>>>>> dev
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -365,12 +369,21 @@
             ),
         ),
         'laravel/breeze' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v1.9.0',
             'version' => '1.9.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/breeze',
             'aliases' => array(),
             'reference' => '0d7633380c81d0827f40f6064d38f8884f5c5441',
+=======
+            'pretty_version' => 'v1.9.1',
+            'version' => '1.9.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/breeze',
+            'aliases' => array(),
+            'reference' => 'cde98d03954bfcad0c9370c825187b8a579d94e1',
+>>>>>>> dev
             'dev_requirement' => false,
         ),
         'laravel/framework' => array(
@@ -383,12 +396,16 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
+<<<<<<< HEAD
             'reference' => '05345ae4f57eafe2d8224480dc4ed9163e8778b7',
+=======
+            'reference' => 'f96b5e29339c66a2c467abb23bdf4da95dedaa0d',
+>>>>>>> dev
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -745,8 +762,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -960,6 +977,7 @@
             'dev_requirement' => true,
         ),
         'spatie/flare-client-php' => array(
+<<<<<<< HEAD
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
             'type' => 'library',
@@ -975,6 +993,23 @@
             'install_path' => __DIR__ . '/../spatie/ignition',
             'aliases' => array(),
             'reference' => '997363fbcce809b1e55f571997d49017f9c623d9',
+=======
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/flare-client-php',
+            'aliases' => array(),
+            'reference' => '1059fd8f229fa016b11063c6be9d1922d036adb7',
+            'dev_requirement' => true,
+        ),
+        'spatie/ignition' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/ignition',
+            'aliases' => array(),
+            'reference' => '6aa8f1c8c46aff30c9bd4c354dc865eeee2ed59f',
+>>>>>>> dev
             'dev_requirement' => true,
         ),
         'spatie/laravel-ignition' => array(

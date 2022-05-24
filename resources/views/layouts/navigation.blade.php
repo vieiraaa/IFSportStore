@@ -3,6 +3,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
+<<<<<<< HEAD
+=======
+                
+>>>>>>> dev
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
@@ -12,6 +16,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+<<<<<<< HEAD
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Produtos') }}
                     </x-nav-link>
@@ -21,6 +26,19 @@
                         {{ __('Categorias') }}
                     </x-nav-link>
                 </div>
+=======
+                    <x-nav-link :href="route('produtos_vitrine')" :active="request()->routeIs('produtos_vitrine')">
+                        {{ __('Produtos') }}
+                    </x-nav-link>
+                </div>
+                
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('categorias_listar')" :active="request()->routeIs('categorias_listar')">
+                        {{ __('Categorias') }}
+                    </x-nav-link>
+                </div>
+                
+>>>>>>> dev
                 @if(Auth::user()-> nivel != 1)
 
                 @else
@@ -36,6 +54,10 @@
                     </div>
                 @endif
             </div>
+<<<<<<< HEAD
+=======
+            
+>>>>>>> dev
                 
             
 
@@ -112,11 +134,26 @@
                     <x-responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
+<<<<<<< HEAD
                         {{ __('Log Out') }}
+=======
+                        {{ __('Desconectar') }}
+                    </x-responsive-nav-link>
+                    
+                </form>
+                <form action="{{ route('enderecos_listar') }}">
+                    <x-responsive-nav-link :href="route('enderecos_listar')"
+                        onclick="event.preventDefault();
+                        this.closest('form').submit();">
+                        {{ __('Endereços') }}
+>>>>>>> dev
                     </x-responsive-nav-link>
                 </form>
             </div>
         </div>
     </div>
 </nav>
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
