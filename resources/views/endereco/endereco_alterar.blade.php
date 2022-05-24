@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-<x-app-layout>
-    <x-slot name="header">
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        {{ __("Alteração do Endereco"  ) }}
-      </h2>
-    </x-slot>
-=======
 @extends('template')
 
 @section('conteudo')
->>>>>>> dev
   <div id="cadTransp" style="padding-top: 15px;">
   
       <div class="container">
@@ -71,11 +62,7 @@
                                     <option value="RS">Rio Grande do Sul</option>
                                     <option value="SC">Santa Catarina</option>
                                     <option value="SE">Sergipe</option>
-<<<<<<< HEAD
-                                    <option value="SP">São Pauloo</option>
-=======
                                     <option value="SP">São Paulo</option>
->>>>>>> dev
                                     <option value="TO">Tocantins</option>
                                 </select>
                                     </select>
@@ -102,8 +89,4 @@
   
   
   </div>
-<<<<<<< HEAD
-  </x-app-layout>
-=======
   @endsection
->>>>>>> dev
