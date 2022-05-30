@@ -20,7 +20,7 @@
                                 <img src="{{ $produto->caminho }}" class="card-img-top">
                             </a>
                             <div class="card-header">
-                            {{ $produto->valor }}
+                            R$ {{ $produto->valor }}
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">{{ $produto->nome }}</h5>

@@ -3,8 +3,11 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Lista de Transportadoras') }}
         </h2>
-    </x-slot>
 
+Produto - Novo
+@endsection
+
+@section('conteudo') 
     <form action="{{ route('produtos_salvar') }}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
@@ -44,4 +47,4 @@
     </div>
     </div>
 </form>
-</x-app-layout>
+@endsection

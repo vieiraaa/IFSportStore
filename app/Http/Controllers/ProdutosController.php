@@ -22,9 +22,9 @@ class ProdutosController extends Controller
         return view('produto.produtos_listar', ['produtos' => $produtos]);
     }
 
-    function carrinho(){
-        $produtos = Produto::all();
-        return view('carrinho', ['produtos' => $produtos]);
+    function carrinho($slug){
+        $produto = Produto::where('slug', '=', $slug)->first();
+        return view('carrinho', ['produto' => $produto]);
     }
 
     function vitrine(){
@@ -53,7 +53,7 @@ class ProdutosController extends Controller
 
         $imagem = $req->file('arquivo');
         $caminho_arquivo = $imagem->storeAs('produtos', "{$produto->id}.{$imagem->extension()}");
-        $produto->caminho = "/storage/$caminho_arquivo";
+        $produto->caminho = "storage/$caminho_arquivo";
         $produto->save();
 
         return redirect()->route('produtos_listar');
