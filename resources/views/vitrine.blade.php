@@ -29,9 +29,7 @@
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
+  
                                 <small class="text-success">12 em estoque</small>
                             </div>
                         </div>

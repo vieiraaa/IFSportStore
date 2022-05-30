@@ -8,6 +8,7 @@ use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\TransportadorasController;
 use App\Http\Controllers\FornecedoresController;
 use App\Http\Controllers\EnderecosController;
+use App\Http\Controllers\PedidosController;
 
 
 
@@ -40,8 +41,12 @@ Route::get('/', function () {
             Route::get('/ifsport/enderecos/alterar/{id}', [EnderecosController::class, 'alterar'])->name('enderecos_alterar');
             Route::post('/ifsport/enderecos/alterar/', [EnderecosController::class, 'salvar'])->name('enderecos_salvar');
             Route::get('/ifsport/enderecos/excluir/{id}', [EnderecosController::class, 'excluir'])->name('enderecos_excluir');
+            /*  ---------------------------------------Pedidos---------------------------------------------- */
+            Route::get('/ifsport/produtos/carrinho/{slug}', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
+            Route::post('/ifsport/pedidos/novo', [PedidosController::class, 'novo'])->name('pedidos_novo');
+            Route::get('/ifsport/pedidos/listar', [PedidosController::class, 'listar'])->name('pedidos_listar');
+            Route::get('/ifsport/pedidos/excluir/{id}', [PedidosController::class, 'excluir'])->name('pedidos_excluir');
 
-/*
              /*  ---------------------------------------Categorias---------------------------------------------- */
             //Route::get('/ifsport/categorias/novo', [CategoriasController::class, 'cadastro'])->name('categorias_cadastro');
             Route::post('/ifsport/categorias/novo', [CategoriasController::class, 'novo'])->name('categorias_novo');
@@ -76,7 +81,7 @@ Route::get('/', function () {
             
 
 });
-Route::get('/ifsport/produtos/carrinho/{slug}', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
+
     Route::get('/', [ProdutosController::class, 'vitrine'])->name('produtos_vitrine');
     Route::get('/ifsport/produtos/categoria/{id}', [ProdutosController::class, 'produtosCategoria'])->name('produtos_categoria');
 
