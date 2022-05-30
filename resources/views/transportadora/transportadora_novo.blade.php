@@ -98,8 +98,4 @@
 
 
         </div>
-<<<<<<< HEAD
-</x-app-layout>
-=======
 @endsection
->>>>>>> dev
