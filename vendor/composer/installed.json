@@ -1249,19 +1249,6 @@
         },
         {
             "name": "laravel/breeze",
-<<<<<<< HEAD
-            "version": "v1.9.0",
-            "version_normalized": "1.9.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/breeze.git",
-                "reference": "0d7633380c81d0827f40f6064d38f8884f5c5441"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/0d7633380c81d0827f40f6064d38f8884f5c5441",
-                "reference": "0d7633380c81d0827f40f6064d38f8884f5c5441",
-=======
             "version": "v1.9.1",
             "version_normalized": "1.9.1.0",
             "source": {
@@ -1273,7 +1260,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/breeze/zipball/cde98d03954bfcad0c9370c825187b8a579d94e1",
                 "reference": "cde98d03954bfcad0c9370c825187b8a579d94e1",
->>>>>>> dev
                 "shasum": ""
             },
             "require": {
@@ -1282,11 +1268,7 @@
                 "illuminate/validation": "^8.42|^9.0",
                 "php": "^7.3|^8.0"
             },
-<<<<<<< HEAD
-            "time": "2022-03-26T16:06:30+00:00",
-=======
             "time": "2022-05-12T00:02:24+00:00",
->>>>>>> dev
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -5401,19 +5383,6 @@
         },
         {
             "name": "spatie/flare-client-php",
-<<<<<<< HEAD
-            "version": "1.2.0",
-            "version_normalized": "1.2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/86a380f5b1ce839af04a08f1c8f2697184cdf23f",
-                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f",
-=======
             "version": "1.1.1",
             "version_normalized": "1.1.1.0",
             "source": {
@@ -5425,7 +5394,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/1059fd8f229fa016b11063c6be9d1922d036adb7",
                 "reference": "1059fd8f229fa016b11063c6be9d1922d036adb7",
->>>>>>> dev
                 "shasum": ""
             },
             "require": {
@@ -5445,11 +5413,7 @@
                 "phpstan/phpstan-phpunit": "^1.0",
                 "spatie/phpunit-snapshot-assertions": "^4.0"
             },
-<<<<<<< HEAD
-            "time": "2022-05-16T12:13:39+00:00",
-=======
             "time": "2022-05-11T09:43:07+00:00",
->>>>>>> dev
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -5479,11 +5443,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-<<<<<<< HEAD
-                "source": "https://github.com/spatie/flare-client-php/tree/1.2.0"
-=======
                 "source": "https://github.com/spatie/flare-client-php/tree/1.1.1"
->>>>>>> dev
             },
             "funding": [
                 {
@@ -5495,19 +5455,6 @@
         },
         {
             "name": "spatie/ignition",
-<<<<<<< HEAD
-            "version": "1.3.1",
-            "version_normalized": "1.3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/ignition.git",
-                "reference": "997363fbcce809b1e55f571997d49017f9c623d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/997363fbcce809b1e55f571997d49017f9c623d9",
-                "reference": "997363fbcce809b1e55f571997d49017f9c623d9",
-=======
             "version": "1.3.0",
             "version_normalized": "1.3.0.0",
             "source": {
@@ -5519,7 +5466,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/ignition/zipball/6aa8f1c8c46aff30c9bd4c354dc865eeee2ed59f",
                 "reference": "6aa8f1c8c46aff30c9bd4c354dc865eeee2ed59f",
->>>>>>> dev
                 "shasum": ""
             },
             "require": {
@@ -5539,11 +5485,7 @@
                 "phpstan/phpstan-phpunit": "^1.0",
                 "symfony/process": "^5.4|^6.0"
             },
-<<<<<<< HEAD
-            "time": "2022-05-16T13:16:07+00:00",
-=======
             "time": "2022-05-12T08:19:04+00:00",
->>>>>>> dev
             "type": "library",
             "extra": {
                 "branch-alias": {

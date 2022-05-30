@@ -76,7 +76,7 @@ Route::get('/', function () {
             
 
 });
-Route::get('/ifsport/produtos/carrinho', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
+Route::get('/ifsport/produtos/carrinho/{slug}', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
     Route::get('/', [ProdutosController::class, 'vitrine'])->name('produtos_vitrine');
     Route::get('/ifsport/produtos/categoria/{id}', [ProdutosController::class, 'produtosCategoria'])->name('produtos_categoria');
 
