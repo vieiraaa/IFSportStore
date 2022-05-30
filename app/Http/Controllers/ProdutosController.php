@@ -53,7 +53,7 @@ class ProdutosController extends Controller
 
         $imagem = $req->file('arquivo');
         $caminho_arquivo = $imagem->storeAs('produtos', "{$produto->id}.{$imagem->extension()}");
-        $produto->caminho = "storage/$caminho_arquivo";
+        $produto->caminho = public_path("storage/$caminho_arquivo");
         $produto->save();
 
         return redirect()->route('produtos_listar');

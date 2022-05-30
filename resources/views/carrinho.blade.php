@@ -34,7 +34,7 @@
                                 <input type="text" class="form-control text-center border-dark" value="4">
                             </div>
                             <div class="text-end mt-2">
-                                <span class="text-dark">Valor Item: R$ {{ $produto->valor }}</span>
+                                <span class="text-dark">Valor Item: R$ <span id="valor1">{{ $produto->valor }}</span></span>
                             </div>
                         </div>
                     </div>

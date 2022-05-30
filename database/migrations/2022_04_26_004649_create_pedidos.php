@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
-            $table->string('status',21);
+            $table->string('status',50);
             $table->date('dataped');
             $table->date('dataent');
             $table->unsignedBigInteger('cliente_id');

@@ -53,6 +53,13 @@
                           {{ __('Endereços') }}
                       </a>
                   </form>
+                  <form action="{{ route('pedidos_listar') }}">
+                      <a class="dropdown-item" href="route('pedidos_listar')"
+                          onclick="event.preventDefault();
+                              this.closest('form').submit();">
+                          {{ __('Pedidos') }}
+                      </a>
+                  </form>
                   <form method="POST" action="{{ route('logout') }}">
                     @csrf
 

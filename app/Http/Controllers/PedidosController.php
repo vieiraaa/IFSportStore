@@ -19,7 +19,7 @@ class PedidosController extends Controller
     function novo (Request $req){
         $usuario = Auth::user();
         $pedido = new Pedido();
-        $pedido->status = '1';
+        $pedido->status = 'Aguardando pagamento';
         $pedido->dataped = Carbon::now()->toDateTimeString();
         $pedido->dataent = Carbon::now()->toDateTimeString();
         $pedido->cliente_id = $usuario->id ;
