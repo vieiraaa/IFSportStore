@@ -17,7 +17,7 @@ class PedidosController extends Controller
         return view('pedido.pedidos_listar', ['pedidos' => $pedidos]);
     }
     function novo (Request $req){
-        $usuario = Auth::user();
+       /* $usuario = Auth::user();
         $pedido = new Pedido();
         $pedido->status = 'Aguardando pagamento';
         $pedido->dataped = Carbon::now()->toDateTimeString();
@@ -25,8 +25,11 @@ class PedidosController extends Controller
         $pedido->cliente_id = $usuario->id ;
         $pedido->endereco_id = 1;
         $pedido->transportadora_id = 1;
-        $pedido->save();
-
+        $pedido->save();*/
+        
+        if(session()->has('carrinho')){
+            
+        }
         return redirect()->route('pedidos_listar');
     }
 

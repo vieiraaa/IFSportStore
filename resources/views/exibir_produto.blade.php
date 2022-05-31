@@ -3,6 +3,11 @@
 @section('conteudo')
 
 <body>
+    <form method="POST" action="{{ route('session_novo') }}">
+        @csrf
+        <input type="text" name='id' value="{{ $produto->id }}">
+        <input type="text" name='valor' value="{{ $produto->valor }}">
+    
         <main class="flex-fill">
             <div class="container">
                 <div class="row g-3">
@@ -30,13 +35,16 @@
                         {{ $produto->descricao }}
                         </p>
                         <br>
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" name='quantidade'>
                         <h5>R$: {{ $produto->valor }} </h5>
                         <h7>Em ate 6x sem juros no cartao IFSport</h7>
                         <br>
                         <p>
-                            <div><a href="{{ route('produtos_carrinho', ['slug' => $produto->slug ]) }}" class="btn btn-dark">Compre Agora</a>
+                            <div><button type="submit" class="btn btn-dark" value="Enviar">Compre Agora</button>
                             </div>
                         </p>
+                        </form>
                     </div>
                 </div>
             </div>

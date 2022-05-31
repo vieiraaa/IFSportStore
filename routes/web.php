@@ -9,6 +9,7 @@ use App\Http\Controllers\TransportadorasController;
 use App\Http\Controllers\FornecedoresController;
 use App\Http\Controllers\EnderecosController;
 use App\Http\Controllers\PedidosController;
+use App\Http\Controllers\ItensPedController;
 
 
 
@@ -42,9 +43,12 @@ Route::get('/', function () {
             Route::post('/ifsport/enderecos/alterar/', [EnderecosController::class, 'salvar'])->name('enderecos_salvar');
             Route::get('/ifsport/enderecos/excluir/{id}', [EnderecosController::class, 'excluir'])->name('enderecos_excluir');
             /*  ---------------------------------------Pedidos---------------------------------------------- */
+            
             Route::get('/ifsport/produtos/carrinho/{slug}', [ProdutosController::class, 'carrinho'])->name('produtos_carrinho');
-            Route::post('/ifsport/pedidos/novo', [PedidosController::class, 'novo'])->name('pedidos_novo');
-            Route::get('/ifsport/pedidos/listar', [PedidosController::class, 'listar'])->name('pedidos_listar');
+            Route::post('/ifsport/pedidos/novo', [ItensPedController::class, 'novo'])->name('session_novo');
+            Route::get('/ifsport/pedidos/fechar', [ItensPedController::class, 'fechar'])->name('session_fechar');
+            //Route::post('/ifsport/pedidos/novo', [PedidosController::class, 'novo'])->name('pedidos_novo');
+            Route::get('/ifsport/pedidos/listar', [ItensPedController::class, 'listar'])->name('pedidos_listar');
             Route::get('/ifsport/pedidos/excluir/{id}', [PedidosController::class, 'excluir'])->name('pedidos_excluir');
 
              /*  ---------------------------------------Categorias---------------------------------------------- */

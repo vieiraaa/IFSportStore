@@ -12,32 +12,38 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Status</th>
-                            <th>Data do Pedido</th>
-                            <th>Data de Entrega</th>
-                            <th>Endereco</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                            <th>Funcionalidades</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        @foreach ($pedidos as $pd)
+                        @php 
+                            $valtot = 0;
+                        @endphp
+                        @foreach ($carrinho as $pd)
                         
                             <tr>
-                                <td>{{ $pd->id }}</td>
-                                <td>{{ $pd->status }}</td>
-                                <td>{{ $pd->dataped }}</td>
-                                <td>{{ $pd->dataent }}</td>
-                                <td>{{ $pd->endereco_id }}</td>
+                                <td>{{ $pd['produto_id'] }}</td>
+                                <td>{{ $pd['nome'] }}</td>
+                                <td>{{ $pd['quantidade'] }}</td>
+                                <td>{{ $pd['valunit'] }}</td>
+
                                 <td>
-                                    <a href="#"
-                                        onclick="excluir({{ $pd->id }})" class="btn btn-danger">Cancelar</a>
+                                    <a href="#" onclick="excluir({{ $pd['produto_id'] }})" class="btn btn-danger">Cancelar</a>
                                 </td>
                             </tr>
+                            @php
+                                $valtot = $valtot + $pd['valunit'];
+                            @endphp
+                                
                         @endforeach
-
+                        {{$valtot}}
                     </tbody>
 
                 </table>
+                <a href="{{ route('session_fechar') }}" class="btn btn-dark">Fechar pedido</a>
             </div>
         </div>
         <div class="col-1">
